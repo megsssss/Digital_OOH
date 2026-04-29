@@ -1,4 +1,4 @@
-# DigitalOOH.IO — Site Health & Revenue-at-Risk Monitor
+# DigitalOOH.IO -Site Health & Revenue-at-Risk Monitor
 
 **Take-home submission · Technical BA role · Megha**
 
@@ -9,7 +9,7 @@
 A full-stack prototype of a **site health and revenue-at-risk monitor** for OOH media owners. It answers two questions in real time:
 
 1. Which screens in my network are down right now?
-2. How much money am I losing — and which advertiser campaigns are affected?
+2. How much money am I losing and which advertiser campaigns are affected?
 
 The backend is Node.js + MongoDB. The frontend is React. The dataset covers **50 sites across 18 Indian cities**, seeded with 8 active advertiser campaigns.
 
@@ -17,7 +17,7 @@ The backend is Node.js + MongoDB. The frontend is React. The dataset covers **50
 
 ## Live Demo
 
-→ **[Deployed URL — add after deployment]**
+→ **[Deployed URL - add after deployment]**
 
 Or run locally (see below).
 
@@ -27,7 +27,7 @@ Or run locally (see below).
 
 ### Prerequisites
 - Node.js 18+
-- MongoDB running locally (`mongod`) OR just run without it — the backend falls back to mock mode automatically.
+- MongoDB running locally (`mongod`) OR just run without it, the backend falls back to mock mode automatically.
 
 ### Backend
 
@@ -51,7 +51,7 @@ npm run dev
 
 Set `VITE_API_URL=http://localhost:5000` in `frontend/.env` to connect to the live backend.
 
-The **frontend also works fully standalone** — it has all 50 sites and 8 campaigns embedded as mock data. You don't need the backend running to see the full UI.
+The **frontend also works fully standalone**  it has all 50 sites and 8 campaigns embedded as mock data. You don't need the backend running to see the full UI.
 
 ---
 
@@ -71,7 +71,7 @@ The **frontend also works fully standalone** — it has all 50 sites and 8 campa
 
 ## City Selection — Why These 18
 
-The brief said "50 sites across Indian cities of your choosing — pick cities the way an OOH founder would, not the obvious five."
+The brief said "50 sites across Indian cities of your choosing pick cities the way an OOH founder would, not the obvious five."
 
 So I didn't just do Mumbai, Delhi, Bengaluru, Chennai, Hyderabad. Here's my actual reasoning:
 
@@ -96,7 +96,7 @@ So I didn't just do Mumbai, Delhi, Bengaluru, Chennai, Hyderabad. Here's my actu
 
 ---
 
-## Advertiser Campaigns — Why These 8
+## Advertiser Campaigns -Why These 8
 
 These are real brands running real OOH campaigns in India right now (as of early 2025), chosen to show the range of sectors that use OOH:
 
@@ -139,23 +139,23 @@ I haven't seen the roadmap, but: 12 features in 12 months before you have real u
 
 ## Where I Used AI Heavily
 
-- **Market research synthesis** — I used Claude to help organise and fact-check market data from EY, FICCI-EY, Mordor Intelligence, and Media4Growth. All statistics cited in the strategy doc are from primary reports.
-- **Boilerplate React/Node code** — The component structure and Express routes were AI-assisted. The data design (which cities, which campaigns, which rate cards, the revenue-at-risk formula) was done by me.
-- **Document formatting** — The Word doc was generated programmatically using the `docx` JS library.
+- **Market research synthesis** I used Claude to help organise and fact-check market data from EY, FICCI-EY, Mordor Intelligence, and Media4Growth. All statistics cited in the strategy doc are from primary reports.
+- **Boilerplate React/Node code**  The component structure and Express routes were AI-assisted. The data design (which cities, which campaigns, which rate cards, the revenue-at-risk formula) was done by me.
+- **Document formatting** The Word doc was generated programmatically using the `docx` JS library.
 
 **Where I didn't use AI:**
-- The city selection rationale — that's my judgment about Indian geography and OOH market dynamics.
-- The "What I'd Push Back On" section — written by me, directly.
-- The OOH observation (Section 4 of the doc) — real, personal.
+- The city selection rationale that's my judgment about Indian geography and OOH market dynamics.
+- The "What I'd Push Back On" section written by me, directly.
+- The OOH observation (Section 4 of the doc) real, personal.
 
 ---
 
 ## If I Ran Out of Time
 
 I ran out of time on:
-- A real-time ping monitor (cron job that actually pings screens and updates status) — the architecture is there in `server.js` but I'd wire it to `node-cron` properly in production
-- Map visualisation — I'd use Mapbox GL JS to show site locations with status dots. The lat/lng coordinates are all seeded.
-- WhatsApp alert integration — the logical alert channel for Indian media owners
+- A real-time ping monitor (cron job that actually pings screens and updates status) the architecture is there in `server.js` but I'd wire it to `node-cron` properly in production
+- Map visualisation -I'd use Mapbox GL JS to show site locations with status dots. The lat/lng coordinates are all seeded.
+- WhatsApp alert integration -the logical alert channel for Indian media owners
 
 ---
 
