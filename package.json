@@ -1,7 +1,6 @@
 {
   "name": "digitaloooh-frontend",
   "version": "1.0.0",
-  "description": "DigitalOOH.IO - Site Health Monitor Dashboard",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
